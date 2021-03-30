@@ -1,0 +1,20 @@
+<p>formulario works!</p>
+<form [formGroup]="imageForm" (ngSubmit)="add()">
+  
+    <label>
+      Task Name:
+      <input type="text" formControlName="name">
+    </label>
+  
+    <label>
+      Task Descripcion:
+      <input type="text" formControlName="descripcion">
+    </label>
+    
+  
+
+  <input type= "file" name = "image" (change)="onFileSelect($event)" />
+  
+  <button type="submit">Agregar</button>
+
+  </form>
